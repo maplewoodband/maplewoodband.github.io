@@ -6,7 +6,7 @@ const Locations = () => {
         <Navbar />
         <div class="page-title">Venues</div>
         <div class="main-text">
-            We've played in many venues over the years including the following
+            We&apos;ve played in many venues over the years including the following
 
             Cheshire
             <ul>

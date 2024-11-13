@@ -1,7 +1,7 @@
 // pages/tours.js
 import Navbar from '../components/Navbar';
 import ImageGallery from "react-image-gallery";
-
+import Image from 'next/image'
 import image_1 from '../assets/images/2016_lower_damgate_farm/1.png';
 import thumb_1 from '../assets/images/2016_lower_damgate_farm/thumbnails/1.png';
 import image_2 from '../assets/images/2016_lower_damgate_farm/2.png';
