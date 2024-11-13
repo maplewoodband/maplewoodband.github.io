@@ -1,0 +1,143 @@
+nav {
+    background-color: rgba(0,0,0,0.85);
+    color: white;
+    font-family: Cabin, Helvetica, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 35px;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin:0 auto;
+    
+}
+nav a {
+    color: white;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    text-decoration: none;
+}
+
+nav a::after {
+    content: " •";
+    padding-left: 12px;
+    color: gray;
+}
+
+
+nav ul {
+    text-align: center;
+
+}
+nav li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    display: inline;
+    text-align: center;
+}
+body {
+    background-repeat: no-repeat;
+    background-image: url('../assets/images/background.png');
+    background-size: cover;
+    background-attachment: fixed;
+    height:100%;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+  .maplewood-banner-container {
+    padding-top: 155px;
+    padding-bottom: 155px;
+  }
+  .maplewood-banner {
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    border: solid white 10px;
+    font-family: Cabin, Helvetica, sans-serif;
+    font-size: 40px;
+    width: fit-content;
+    text-align: center;
+    margin:auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    
+}
+.page-title {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Cabin, Helvetica, sans-serif;
+    font-size: 40px;
+    width: fit-content;
+    text-align: center;
+    margin:auto;
+    margin-bottom: 32px;
+    
+}
+.main-text {
+    background-color: rgba(0,0,0,0.86);
+    width: 80%;
+    margin: 0 auto; /* Centers the page */
+    color: white;
+    font-family: Cabin, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    margin-bottom: 70px;
+}
+.page-content {
+    width: 80%;
+    margin: auto; /* Centers the page */
+    color: white;
+    line-height: 32px;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    margin-bottom: 132px;
+    /* font-family: Cabin, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    margin-bottom: 132px; */
+}
+.main-text h2 {
+    font-family: Alegreya, Georgia, serif;
+    font-size: 32px;
+    line-height: 32px;
+}
+
+iframe {
+    margin: auto;
+    display: block;
+    margin-top: 70px;
+}
+
+.footer {
+    background-color: rgba(0,0,0,0.86);
+}
+
+.soundcloud {
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    padding-top: 72px;
+    padding-bottom: 72px;
+}
+/* bg-image {
+    background-image: url();
+} */
