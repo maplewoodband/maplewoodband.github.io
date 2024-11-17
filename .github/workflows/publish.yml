@@ -1,52 +1,33 @@
-# File: .github/workflows/publish.yml
-name: publish-to-github-pages
+name: Deploy to Github Pages
+
 on:
   push:
     branches:
       - main
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  workflow_dispatch:
 
 jobs:
-  build:
+  deployment:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v3
 
-      - name: Setup Node.js ⚙️ - Cache dependencies ⚡ - Install dependencies 🔧
-        uses: ./.github/workflows/setup-node
-
-      - name: Setup Pages ⚙️
-        uses: actions/configure-pages@v4
+      - name: Setup Node
+        uses: actions/setup-node@v3
         with:
-          static_site_generator: next
+          node-version: "lts/*"
+          cache: "npm"
 
-      - name: Build with Next.js 🏗️
-        run: npx next build
+      - name: Build
+        run: |
+          npm i
+          npm run build
+          npm run export
 
-      - name: Upload artifact 📡
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          path: ./out
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    runs-on: ubuntu-latest
-    needs: build
-
-    steps:
-      - name: Publish to GitHub Pages 🚀
-        id: deployment
-        uses: actions/deploy-pages@v4
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_dir: ./out
