@@ -1,4 +1,7 @@
 /** @type {import('next').NextConfig} */
+
+const withImages = require("next-images");
+
 const nextConfig = {
   reactStrictMode: true,
   output: "export",
@@ -7,9 +10,11 @@ const nextConfig = {
   //   disableStaticImages: true
   // }
   images: {
+    disableStaticImages: true,
+    unoptimized: true,
     loader: 'akamai',
     path: '',
   },
 }
 
-module.exports = nextConfig
+module.exports = withImages(nextConfig)

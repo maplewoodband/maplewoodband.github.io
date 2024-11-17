@@ -31,55 +31,55 @@ import thumb_12 from '../assets/images/2016_rehearsal/thumbnails/4.jpg';
 
 const images = [
   {
-    original: image_1.src,
-    thumbnail: thumb_1.src,
+    original: image_1,
+    thumbnail: thumb_1,
   },
   {
-    original: image_2.src,
-    thumbnail: thumb_2.src,
+    original: image_2,
+    thumbnail: thumb_2,
   },
   {
-    original: image_3.src,
-    thumbnail: thumb_3.src,
+    original: image_3,
+    thumbnail: thumb_3,
   },
   {
-    original: image_4.src,
-    thumbnail: thumb_4.src,
+    original: image_4,
+    thumbnail: thumb_4,
   },
   {
-    original: image_5.src,
-    thumbnail: thumb_5.src,
+    original: image_5,
+    thumbnail: thumb_5,
   },
   {
-    original: image_6.src,
-    thumbnail: thumb_6.src,
+    original: image_6,
+    thumbnail: thumb_6,
   },
   {
-    original: image_7.src,
-    thumbnail: thumb_7.src,
+    original: image_7,
+    thumbnail: thumb_7,
   },
   {
-    original: image_8.src,
-    thumbnail: thumb_8.src,
+    original: image_8,
+    thumbnail: thumb_8,
   },
 ];
 
 const images_2 = [
   {
-    original: image_9.src,
-    thumbnail: thumb_9.src,
+    original: image_9,
+    thumbnail: thumb_9,
   },
   {
-    original: image_10.src,
-    thumbnail: thumb_10.src,
+    original: image_10,
+    thumbnail: thumb_10,
   },
   {
-    original: image_11.src,
-    thumbnail: thumb_11.src,
+    original: image_11,
+    thumbnail: thumb_11,
   },
   {
-    original: image_12.src,
-    thumbnail: thumb_12.src,
+    original: image_12,
+    thumbnail: thumb_12,
   }
 ];
 
